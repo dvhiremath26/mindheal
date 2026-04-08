@@ -149,7 +149,7 @@ const config: MindHealConfig = {
     temperature: 0.1,
     baseUrl: undefined,
     // Azure: azureDeploymentName, azureApiVersion
-    // Ollama: ollamaHost
+    // Ollama: ollamaHost: 'http://localhost:11434'
     // Bedrock: awsRegion, awsAccessKeyId, awsSecretAccessKey, awsSessionToken
   },
 
@@ -299,7 +299,12 @@ ollama pull llama3 && ollama serve
 
 ```ts
 mindHealConfig({
-  ai: { provider: 'ollama', apiKey: '', model: 'llama3' },
+  ai: {
+    provider: 'ollama',
+    apiKey: '',
+    model: 'llama3',
+    ollamaHost: process.env.OLLAMA_HOST || 'http://localhost:11434',
+  },
 });
 ```
 
