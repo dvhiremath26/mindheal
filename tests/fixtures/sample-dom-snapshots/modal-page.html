@@ -1,0 +1,40 @@
+<div id="app">
+  <h1>Application Dashboard</h1>
+  <button id="open-modal" data-testid="open-modal" aria-label="Open settings">Settings</button>
+
+  <!-- Background content -->
+  <div class="content">
+    <button data-testid="save-btn" aria-label="Save changes">Save</button>
+    <button data-testid="cancel-btn" aria-label="Cancel">Cancel</button>
+  </div>
+
+  <!-- Modal overlay -->
+  <div class="modal-overlay" role="dialog" aria-modal="true" aria-label="Confirm Delete">
+    <div class="modal-content" data-testid="confirm-modal">
+      <h2 data-testid="modal-title">Confirm Delete</h2>
+      <p data-testid="modal-message">Are you sure you want to delete this item? This action cannot be undone.</p>
+      <div class="modal-actions">
+        <button data-testid="modal-cancel" aria-label="Cancel deletion" class="btn-secondary">Cancel</button>
+        <button data-testid="modal-confirm" aria-label="Confirm deletion" class="btn-danger">Delete</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast notification popup -->
+  <div class="toast-container" role="alertdialog" aria-label="Notification">
+    <div class="toast" data-testid="toast-success">
+      <span class="toast-icon">✓</span>
+      <span data-testid="toast-message">Item saved successfully</span>
+      <button data-testid="toast-dismiss" aria-label="Dismiss notification">×</button>
+    </div>
+  </div>
+
+  <!-- HTML dialog element -->
+  <dialog id="native-dialog" data-testid="native-dialog" open>
+    <form method="dialog">
+      <p data-testid="dialog-text">Do you want to proceed?</p>
+      <button data-testid="dialog-yes" value="yes">Yes</button>
+      <button data-testid="dialog-no" value="no">No</button>
+    </form>
+  </dialog>
+</div>

@@ -1,0 +1,26 @@
+<div id="app">
+  <h1>Shadow DOM Test Page</h1>
+  <custom-button id="shadow-host">
+    <!-- Shadow root would contain: -->
+    <!--
+    <button class="inner-btn" data-testid="shadow-submit" aria-label="Submit Form">
+      Submit
+    </button>
+    <span class="status-text">Ready</span>
+    -->
+  </custom-button>
+  <custom-dropdown id="dropdown-host">
+    <!-- Shadow root would contain: -->
+    <!--
+    <div role="listbox" aria-label="Select option">
+      <div role="option" data-testid="option-1">Option A</div>
+      <div role="option" data-testid="option-2">Option B</div>
+      <div role="option" data-testid="option-3">Option C</div>
+    </div>
+    -->
+  </custom-dropdown>
+  <div class="regular-content">
+    <input type="text" id="name-input" data-testid="name-input" placeholder="Enter your name" />
+    <button id="regular-btn" data-testid="regular-submit">Regular Submit</button>
+  </div>
+</div>

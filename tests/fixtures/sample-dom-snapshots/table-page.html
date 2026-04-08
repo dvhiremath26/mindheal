@@ -1,0 +1,51 @@
+<div id="app">
+  <h1>User Management</h1>
+  <table id="users-table" data-testid="users-table" role="table">
+    <thead>
+      <tr>
+        <th data-testid="col-name">Name</th>
+        <th data-testid="col-email">Email</th>
+        <th data-testid="col-role">Role</th>
+        <th data-testid="col-status">Status</th>
+        <th data-testid="col-actions">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr data-testid="row-1">
+        <td data-testid="name-1">John Doe</td>
+        <td data-testid="email-1">john@example.com</td>
+        <td data-testid="role-1">Admin</td>
+        <td data-testid="status-1"><span class="badge active">Active</span></td>
+        <td data-testid="actions-1">
+          <button data-testid="edit-1" aria-label="Edit John Doe">Edit</button>
+          <button data-testid="delete-1" aria-label="Delete John Doe">Delete</button>
+        </td>
+      </tr>
+      <tr data-testid="row-2">
+        <td data-testid="name-2">Jane Smith</td>
+        <td data-testid="email-2">jane@example.com</td>
+        <td data-testid="role-2">User</td>
+        <td data-testid="status-2"><span class="badge inactive">Inactive</span></td>
+        <td data-testid="actions-2">
+          <button data-testid="edit-2" aria-label="Edit Jane Smith">Edit</button>
+          <button data-testid="delete-2" aria-label="Delete Jane Smith">Delete</button>
+        </td>
+      </tr>
+      <tr data-testid="row-3">
+        <td data-testid="name-3">Bob Wilson</td>
+        <td data-testid="email-3">bob@example.com</td>
+        <td data-testid="role-3">Moderator</td>
+        <td data-testid="status-3"><span class="badge active">Active</span></td>
+        <td data-testid="actions-3">
+          <button data-testid="edit-3" aria-label="Edit Bob Wilson">Edit</button>
+          <button data-testid="delete-3" aria-label="Delete Bob Wilson">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="pagination">
+    <button data-testid="prev-page" aria-label="Previous page">Previous</button>
+    <span data-testid="page-info">Page 1 of 5</span>
+    <button data-testid="next-page" aria-label="Next page">Next</button>
+  </div>
+</div>

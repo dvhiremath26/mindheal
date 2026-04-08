@@ -1,0 +1,40 @@
+# Source files (dist/ is published instead)
+src/
+tests/
+
+# Config files
+.eslintrc.json
+.prettierrc
+tsconfig.json
+tsconfig.build.json
+rollup.config.ts
+rollup.config.mjs
+vitest.config.ts
+mindheal.config.example.ts
+
+# Dev/IDE
+.vscode/
+.idea/
+.claude/
+.github/
+
+# Runtime data
+.mindheal/
+.env
+.env.local
+.env.*.local
+
+# Test artifacts
+test-results/
+playwright-report/
+coverage/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Misc
+*.tgz
+*.log
+*.tsbuildinfo
+.gitignore

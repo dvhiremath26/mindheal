@@ -1,0 +1,24 @@
+<div id="dashboard" class="dashboard-container">
+  <header>
+    <h1 data-testid="dashboard-title">Analytics Dashboard</h1>
+    <nav role="navigation" aria-label="Main navigation">
+      <ul>
+        <li><a href="/dashboard" aria-current="page">Dashboard</a></li>
+        <li><a href="/reports">Reports</a></li>
+        <li><a href="/settings">Settings</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="widget-grid" data-testid="widget-grid">
+      <div class="widget" data-testid="revenue-widget">
+        <h2 role="heading">Revenue</h2>
+        <canvas id="revenue-chart"></canvas>
+      </div>
+      <div class="widget" data-testid="users-widget">
+        <h2 role="heading">Active Users</h2>
+        <span class="metric" data-testid="user-count">1,234</span>
+      </div>
+    </div>
+  </main>
+</div>
